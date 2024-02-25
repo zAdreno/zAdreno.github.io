@@ -10,8 +10,8 @@ window.featuredProjects = [
     id: 1,
     name: "Código Helado BK",
     thumbnail: "assets/images/bk.jpg",
-    preview: "./codigo/index.html",
-    code: "./codigo/index.html",
+    preview: "https://adreno.es/codigo",
+    code: "https://adreno.es/codigo",
   },
 ];
 
@@ -23,6 +23,4 @@ window.totalProjects = [
     preview: "https://www.instagram.com/adr3no/",
     code: "https://www.instagram.com/adr3no/",
   },
-
 ];
-
