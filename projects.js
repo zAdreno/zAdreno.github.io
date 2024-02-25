@@ -1,0 +1,28 @@
+window.featuredProjects = [
+  {
+    id: 0,
+    name: "[SPOTIFY] Purple & Yellow",
+    thumbnail: "assets/images/yellowandpurple.jpg",
+    preview: "https://cloaking.link/NAZ96D",
+    code: "https://cloaking.link/NAZ96D",
+  },
+  {
+    id: 1,
+    name: "Código Helado BK",
+    thumbnail: "assets/images/bk.jpg",
+    preview: "./codigo/index.html",
+    code: "./codigo/index.html",
+  },
+];
+
+window.totalProjects = [
+  {
+    id: 0,
+    name: "Follow on ig ;)",
+    thumbnail: "assets/images/instagram.png",
+    preview: "https://www.instagram.com/adr3no/",
+    code: "https://www.instagram.com/adr3no/",
+  },
+
+];
+
