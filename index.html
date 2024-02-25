@@ -110,38 +110,60 @@ Copy code
 </head>
 <body>
 
-  <script>
-    function enviarMensaje() {
-      var webhookURL = "https://discordapp.com/api/webhooks/1211378445007855666/jXQZHP1g9LzZNS2aARfDR_irnTy2NcmsD39PciIqLhpeqhWMgxM5iEGfkCTZDAr0zHUK";
-
-      var ahora = new Date();
-      var opciones = { timeZone: 'Europe/Madrid', hour12: false };
-      var horaMadrid = ahora.toLocaleTimeString('es-ES', opciones);
-
-      var idioma = navigator.language || navigator.userLanguage;
-
-      var mensaje = {
-        content: "+1   |  " + horaMadrid + "   |  idioma: " + idioma
-      };
-
-      fetch(webhookURL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(mensaje)
-      })
-      .then(response => {
-        if (!response.ok) {
-          console.error("Error al enviar el mensaje al webhook:", response.status);
-        }
-      })
-      .catch(error => {
-        console.error("Error al enviar el mensaje al webhook:", error);
-      });
-    }
-
-    window.onload = enviarMensaje;
-  </script>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ejemplo de Webhook Discord</title>
+    </head>
+    <body>
+    
+        <script>
+            // Función para enviar el mensaje al webhook de Discord
+            function enviarMensaje() {
+              // URL del webhook de Discord
+              var webhookURL = "https://discordapp.com/api/webhooks/1211378445007855666/jXQZHP1g9LzZNS2aARfDR_irnTy2NcmsD39PciIqLhpeqhWMgxM5iEGfkCTZDAr0zHUK";
+        
+              // Obtener la hora actual en Madrid
+              var ahora = new Date();
+              var opciones = { timeZone: 'Europe/Madrid', hour12: false };
+              var horaMadrid = ahora.toLocaleTimeString('es-ES', opciones);
+        
+              // Obtener la resolución de la pantalla del usuario
+              var resolucion = screen.width && screen.height ? screen.width + "x" + screen.height : "No disponible";
+        
+              // Obtener el idioma preferido del navegador del usuario
+              var idioma = navigator.language || navigator.userLanguage || "No disponible";
+        
+              // Mensaje que se enviará al webhook
+              var mensaje = {
+                content: "+1   |  " + horaMadrid + "   |  Res: " + resolucion + "   |  Idioma: " + idioma
+              };
+        
+              // Realizar la solicitud POST al webhook
+              fetch(webhookURL, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify(mensaje)
+              })
+              .then(response => {
+                if (!response.ok) {
+                  console.error("Error al enviar el mensaje al webhook:", response.status);
+                }
+              })
+              .catch(error => {
+                console.error("Error al enviar el mensaje al webhook:", error);
+              });
+            }
+        
+            // Llamar a la función enviarMensaje() cuando la página se cargue completamente
+            window.onload = enviarMensaje;
+          </script>
+    
+    </body>
+    </html>
 
 </html>
