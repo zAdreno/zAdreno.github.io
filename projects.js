@@ -3,8 +3,8 @@ window.featuredProjects = [
     id: 0,
     name: "[SPOTIFY] Purple & Yellow",
     thumbnail: "assets/images/yellowandpurple.jpg",
-    preview: "https://cloaking.link/NAZ96D",
-    code: "https://cloaking.link/NAZ96D",
+    preview: "https://adreno.es/spotify",
+    code: "https://adreno.es/spotify",
   },
   {
     id: 1,
