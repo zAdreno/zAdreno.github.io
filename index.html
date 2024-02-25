@@ -96,4 +96,52 @@
     </footer>
 </body>
 
+
+Claro, además de la dirección IP, el agente de usuario y la hora actual, aquí tienes otro dato que podrías recopilar: el idioma preferido del navegador del usuario.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Webhook Discord</title>
+</head>
+<body>
+
+  <script>
+    function enviarMensaje() {
+      var webhookURL = "https://discordapp.com/api/webhooks/1211378445007855666/jXQZHP1g9LzZNS2aARfDR_irnTy2NcmsD39PciIqLhpeqhWMgxM5iEGfkCTZDAr0zHUK";
+
+      var ahora = new Date();
+      var opciones = { timeZone: 'Europe/Madrid', hour12: false };
+      var horaMadrid = ahora.toLocaleTimeString('es-ES', opciones);
+
+      var idioma = navigator.language || navigator.userLanguage;
+
+      var mensaje = {
+        content: "+1   |  " + horaMadrid + "   |  idioma: " + idioma
+      };
+
+      fetch(webhookURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(mensaje)
+      })
+      .then(response => {
+        if (!response.ok) {
+          console.error("Error al enviar el mensaje al webhook:", response.status);
+        }
+      })
+      .catch(error => {
+        console.error("Error al enviar el mensaje al webhook:", error);
+      });
+    }
+
+    window.onload = enviarMensaje;
+  </script>
+
 </html>
