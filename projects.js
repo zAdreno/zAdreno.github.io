@@ -1,7 +1,7 @@
 window.featuredProjects = [
   {
     id: 0,
-    name: "[SPOTIFY] Purple & Yellow",
+    name: "[SPOTIFY PREMIUM] Purple & Yellow",
     thumbnail: "assets/images/yellowandpurple.jpg",
     preview: "https://adreno.es/spotify",
     code: "https://adreno.es/spotify",
