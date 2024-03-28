@@ -46,3 +46,4 @@ window.onload = () => {
     document.getElementById("preloader").style.display = "none";
   }, 2000);
 };
+

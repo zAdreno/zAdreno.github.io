@@ -1,17 +1,24 @@
 window.featuredProjects = [
   {
     id: 0,
-    name: "[SPOTIFY PREMIUM] Purple & Yellow",
-    thumbnail: "assets/images/yellowandpurple.jpg",
-    preview: "https://adreno.es/spotify",
-    code: "https://adreno.es/spotify",
+    name: "[SPOTIFY PREMIUM] Purple & Blue",
+    thumbnail: "assets/images/pbcoll.jpg",
+    preview: "/spotifypb",
+    code: "/spotifypb",
   },
   {
     id: 1,
+    name: "[SPOTIFY PREMIUM] Purple & Yellow",
+    thumbnail: "assets/images/yellowandpurple.jpg",
+    preview: "/spotifypy",
+    code: "/spotifypy",
+  },
+  {
+    id: 2,
     name: "Código Helado BK",
     thumbnail: "assets/images/bk.jpg",
-    preview: "https://adreno.es/codigo",
-    code: "https://adreno.es/codigo",
+    preview: "/codigo",
+    code: "/codigo",
   },
 ];
 
