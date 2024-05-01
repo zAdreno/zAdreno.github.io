@@ -27,7 +27,7 @@ window.totalProjects = [
     id: 0,
     name: "Follow on ig ;)",
     thumbnail: "assets/images/instagram.png",
-    preview: "https://www.instagram.com/adr3no/",
-    code: "https://www.instagram.com/adr3no/",
+    preview: "https://www.instagram.com/adrenito/",
+    code: "https://www.instagram.com/adrenito/",
   },
 ];
