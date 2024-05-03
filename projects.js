@@ -1,7 +1,7 @@
 window.featuredProjects = [
   {
     id: 0,
-    name: "[SPOTIFY PREMIUM] Red & Black",
+    name: "[SPOTIFY PREMIUM] Blood Spotify",
     thumbnail: "assets/images/rbcoll.png",
     preview: "/spotifyrb",
     code: "/spotifyrb",
