@@ -1,20 +1,27 @@
 window.featuredProjects = [
   {
     id: 0,
+    name: "[SPOTIFY PREMIUM] Red & Black",
+    thumbnail: "assets/images/rbcoll.jpg",
+    preview: "/spotifyrb",
+    code: "/spotifyrb",
+  },
+  {
+    id: 1,
     name: "[SPOTIFY PREMIUM] Purple & Blue",
     thumbnail: "assets/images/pbcoll.jpg",
     preview: "/spotifypb",
     code: "/spotifypb",
   },
   {
-    id: 1,
+    id: 2,
     name: "[SPOTIFY PREMIUM] Purple & Yellow",
     thumbnail: "assets/images/yellowandpurple.jpg",
     preview: "/spotifypy",
     code: "/spotifypy",
   },
   {
-    id: 2,
+    id: 3,
     name: "Código Helado BK",
     thumbnail: "assets/images/bk.jpg",
     preview: "/codigo",
